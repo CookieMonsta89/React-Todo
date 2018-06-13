@@ -1,22 +1,16 @@
+
 import React from 'react';
-
-class Todo extends React.Component {
-    constructor (props) {
-        super();
-        this.state = {
-            task: props.task,
-            isCompleted: props.isCompleted
-        }
-    }
+import './Todo.css'
 
 
 
-    render() {
-        return(
-            <li>{this.state.task}</li>
-        );
-    }
+const Todo = (props) => {
+    
+    return(
+        <li> {props.todo} </li>////putting array into a list 
+    )
 }
+
 
 
 export default Todo;
