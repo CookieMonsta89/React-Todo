@@ -1,3 +1,26 @@
-ul li.is-completed{
-    text-decoration: line-through; 
+.todostyle{
+    list-style: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.todostyle li{
+    border: 1px solid black;;
+    padding: 10px 10px;
+    height:auto;
+    
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+
+.list:hover {
+    background:gray;
+    color:white;
+    text-decoration: underline;
+
+
+  
 }
