@@ -1,21 +1,21 @@
 
 import React from 'react';
 import Todo from './Todo';
-import './Todo.css'
+import './Todo.css';
+
 
 
 
 const TodoList = (props) => {
-    return(////todo_item for styling/////
-        <ul className="todo__item">
-            {props.todoList.filter(list => (!list.completed)).map((list, i) => {
-                return <Todo  key={list.id} todo={list.task} />
+    return(////todostyle for styling/////
+        <ul className="todostyle">
+            {props.todoList.map((list, i) => {
+                return <Todo onClick = {props.onclick} key =
+                {list.id} todo={list.task} />
             })}
         </ul>/////this code is filtering and mapping over list and returning todo/////
     )
 }
-
-
 
 export default TodoList;
 
